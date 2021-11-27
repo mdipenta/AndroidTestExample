@@ -44,7 +44,7 @@ jobs:
           path: app/build/reports/lint-results-debug.html
 
 
-   EspressoTest:
+  espresso:
     runs-on: macos-latest
     steps:
       - name: checkout
