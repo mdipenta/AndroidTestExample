@@ -60,7 +60,7 @@ jobs:
         run: adb start-server
 
       - name: run tests
-        uses: reactivecircus/android-emulator-runner@v2
+        uses: reactivecircus/android-emulator-runner@v3
         with:
           api-level: 30
           emulator-build: 7425822
