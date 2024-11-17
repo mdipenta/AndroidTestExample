@@ -55,7 +55,7 @@ jobs:
 
       - name: Stop server
         run: adb kill-server
-	
+
       - name: Start server
 	run: adb start-server
 
