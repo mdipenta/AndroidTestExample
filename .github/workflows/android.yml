@@ -43,15 +43,11 @@ jobs:
           name: lint.html
           path: app/build/reports/lint-results-debug.html
 
-
   espresso:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
 
       - name: Enable KVM
         run: |
@@ -62,10 +58,9 @@ jobs:
       - name: run tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
-          emulator-build: 7425822
-          emulator-port: 5554
+          api-level: 29
           script: ./gradlew connectedCheck
+
 
       - name: Upload test report
         uses: actions/upload-artifact@v4
