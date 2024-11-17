@@ -53,6 +53,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Stop server
+        run: adb kill-server
+	run: adb start-server
 
       - name: run tests
         uses: reactivecircus/android-emulator-runner@v2
