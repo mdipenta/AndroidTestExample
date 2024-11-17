@@ -58,7 +58,7 @@ jobs:
         with:
           api-level: 30
           emulator-build: 7425822
-	  emulator-port: 5554
+          emulator-port: 5554
           script: ./gradlew connectedCheck
 
       - name: Upload test report
