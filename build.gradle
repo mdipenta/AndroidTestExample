@@ -16,7 +16,6 @@ buildscript {
     }
 }
 
-#all projects
 allprojects {
     repositories {
         google()
